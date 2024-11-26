@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Houses services info</title>
+</head>
+<body>
+<div class="project-container">
+    <div class="project">
+        <div class="house-container">
+            <div class="house">
+                <div id="roof" class="roof roof-active"></div>
+                <div id="window" class="window top-left"></div>
+                <div id="maindoor" class="maindoor"></div>
+            </div>
+            <div class="garage">
+                <div id="garage-roof" class="garage-roof"></div>
+                <div id="garage-door" class="garage-door"></div>
+                <div id="garage-path" class="garage-path"></div>
+            </div>
+            <div id="doorpath" class="doorpath"></div>
+            <div id="lawn" class="lawn"></div>
+            <div id="fence" class="fence"></div>
+        </div>
+        <div class="project-list">
+            <div class="project-list-container">
+                <div class="container">
+                    <ul class="list">
+                        <li class="item" onclick="toggleInfo('Roof-info')">
+                            <span class="caption">Roof</span> ➔
+                            <div id="Roof-info" style="display: block" class="info">This is information about the Roof.</div>
+                        </li>
+                        <li class="item" onclick="toggleInfo('Windows-info')">
+                            <span class="caption">Windows</span> ➔
+                            <div id="Windows-info" class="info">This is information about the Windows.</div>
+                        </li>
+                        <li class="item" onclick="toggleInfo('MainDoor-info')">
+                            <span class="caption">Main Door</span> ➔
+                            <div id="MainDoor-info" class="info">This is information about the Main Door.</div>
+                        </li>
+                        <li class="item" onclick="toggleInfo('DoorPath-info')">
+                            <span class="caption">Door Path</span> ➔
+                            <div id="DoorPath-info" class="info">This is information about the Door Path.</div>
+                        </li>
+                        <li class="item" onclick="toggleInfo('GarageRoof-info')">
+                            <span class="caption">Garage Roof</span> ➔
+                            <div id="GarageRoof-info" class="info">This is information about the Garage Roof.</div>
+                        </li>
+                        <li class="item" onclick="toggleInfo('GarageDoor-info')">
+                            <span class="caption">Garage Door</span> ➔
+                            <div id="GarageDoor-info" class="info">This is information about the Garage Door.</div>
+                        </li>
+                        <li class="item" onclick="toggleInfo('GaragePath-info')">
+                            <span class="caption">Garage Path</span> ➔
+                            <div id="GaragePath-info" class="info">This is information about the Garage Path.</div>
+                        </li>
+                        <li class="item" onclick="toggleInfo('Lawn-info')">
+                            <span class="caption">Lawn</span> ➔
+                            <div id="Lawn-info" class="info">This is information about the Lawn.</div>
+                        </li>
+                        <li class="item" onclick="toggleInfo('Fence-info')">
+                            <span class="caption">Fence</span> ➔
+                            <div id="Fence-info" class="info">This is information about the Fence.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

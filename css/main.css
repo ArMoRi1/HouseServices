@@ -1,0 +1,221 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+.house-container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.house {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    border: 2px solid black;
+}
+.roof {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-bottom: 60px solid black;
+    top: -60px;
+    left: -15%;
+}
+.maindoor {
+    position: absolute;
+    bottom: -2px;
+    left: 105px;
+    width: 40px;
+    height: 70px;
+    background-color: #d9d9d9;
+    border: 2px solid black;
+}
+.window {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: #d9d9d9;
+    border: 2px solid black;
+}
+.window.top-left {
+    top: 20px;
+    left: 25px;
+}
+.garage {
+    position: absolute;
+    bottom: 0;
+    left: 202px;
+    width: 140px;
+    height: 80px;
+    background-color: #fff;
+    border: 2px solid black;
+}
+.garage-door {
+    position: absolute;
+    bottom: -2px;
+    width: 100px;
+    height: 60px;
+    background-color: #d9d9d9;
+    border: 2px solid black;
+    left: 18px;
+}
+.garage-roof {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 30px solid black;
+    top: -30px;
+    left: 0;
+}
+.doorpath {
+    position: absolute;
+    left: 99px;
+    bottom: -50px;
+    height: 0;
+    width: 40px;
+    border-bottom: 50px solid #d9d9d9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    z-index: 2;
+}
+.garage-path{
+    position: absolute;
+    left: 10px;
+    bottom: -52px;
+    height: 0;
+    width: 100px;
+    border-bottom: 50px solid #d9d9d9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    z-index: 2;
+}
+.lawn {
+    position: absolute;
+    bottom: -70px;
+    right: 55px;
+    width: 450px;
+    height: 70px;
+    background-color: grey;
+}
+.fence {
+    position: absolute;
+    left: -100px;
+    bottom: -30px;
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+    transform: rotate(90deg); /* Поворот на 90 градусів */
+}
+.fence::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+            to bottom,  /* Напрямок зверху вниз для вертикальних смужок */
+            transparent,
+            transparent 15px,
+            black 15px,
+            black 20px
+    );
+    /* Додаємо вертикальні перегородки (паркан) */
+}
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.caption {
+    font-weight: bold;
+}
+
+.info {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.item:hover {
+    background-color: #f1f1f1;
+}
+
+.item:active {
+    transform: scale(0.98);
+}
+
+.roof-active {
+    border-bottom: 60px solid red;  /* Змінимо колір даху на червоний при активації */
+}
+.window-active {
+    background-color: #4682b4;  /* Змінимо колір вікна на синій */
+}
+.MainDoor-active {
+    background-color: saddlebrown;
+}
+.DoorPath-active {
+    border-bottom: 50px solid yellow;
+}
+.GarageRoof-active {
+    border-bottom: 30px solid red;
+}
+.GarageDoor-active {
+    background-color: saddlebrown;
+}
+.GaragePath-active {
+    border-bottom: 50px solid yellow;
+}
+.Lawn-active {
+    background-color: forestgreen;
+}
+.Fence-active {
+    background-color: sandybrown;
+}
+.roof,
+.maindoor,
+.window,
+.garage-door,
+.garage-roof,
+.doorpath,
+.garage-path,
+.lawn,
+.fence{
+    cursor:pointer;
+}
